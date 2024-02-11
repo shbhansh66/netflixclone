@@ -1,0 +1,340 @@
+ html,body{
+ width: 100%;
+ height: 100%;
+ background-color: rgb(31, 28, 28);
+}
+
+#home {
+ width: 100%;
+ height: 100%;
+ background-size: max(1200px, 300vw);
+ background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),url(https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png);
+}
+ 
+#nevbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+#nevbar img{
+    width: 15%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+
+#nevbar div{
+    position: absolute;
+    right: -8%;
+    margin: 11%;
+    width: 20%;
+    height: 5vh;
+}
+
+#nevbar div button{
+    width: 25%;
+    height: 4vh;
+    background-color: red;
+    border-radius: 5px;
+    border: transparent;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+#nevbar div select{
+    width: 40%;
+    height: 4vh;
+    margin: 6%;
+    border-radius: 5px;
+    border: 1px solid #756f6f;
+    color: #f3e4e4;
+    background: transparent;
+    cursor: pointer;
+}
+
+.homepage {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    margin-top: 100px;
+    text-align: center;
+  color: #fff;
+}
+
+.homepage h1{
+   display: flex;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.homepage h3{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.homepage p{
+    line-height: 10px;
+    font-weight: 400;
+    font-size: 23px;
+}
+
+
+.email_sign input{
+    /* margin-left: 80px; */
+    padding-left: 10px;
+    border: 1px solid #9d9494;
+    background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.5,0.4));
+    width: 30%;
+    height: 7vh;
+    border-radius: 5px;
+    font-size: large;
+    color: #fff;
+}
+
+.email_sign button{
+    width: 18%;
+    height: 7.5vh;
+    margin: 10px;
+
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid black ;
+    font-size: x-large;
+    color: #fff;
+}
+
+.features{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 1px;
+    color: #fff;
+    
+}
+
+.features .row{
+    display: flex;
+    background-color: black;
+    margin-top: 10px;
+}
+.features .row .text-col{
+    width: 50%;
+    height: 80vh;
+    position: relative;
+}
+
+.features .text-col h1{
+   position: relative;
+    top: 30%;
+    left: 20%;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.features .text-col p{
+    position: relative;
+    top: 30%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: 600; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.features .row .img-col{
+    width: 40%;
+    height: 80vh;
+}
+.features .row img{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    width: 90%;
+    
+}
+.features .row .img-col .video1{
+    position: absolute;
+    right: 165.5px;
+  width: 26.5%;
+  top: 202px;
+}
+.features .row .img-col .video2{
+    position: relative;
+  left: 50%;
+  width: 46.5%;
+  height: 20%;
+  bottom: 25%;
+}
+
+
+
+.faq{
+    width: 100%;
+    /* height: 120vh; */
+    margin-top: 1800px;
+    background-color: black;
+}
+.faq h1{
+    width: 50%;
+    font-size: 45px;
+    font-weight: 900;
+    color: #fff;
+  position: relative;
+  left: 29%;
+  top: 10%;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.allfaq{
+    margin: 120px auto;
+    width: 100%; 
+    max-width: 800px;
+}
+.allfaq li{
+    list-style: none;
+     width: 100%; 
+     padding: 0px;
+} 
+.allfaq li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px;
+    color: #f3e4e4;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    right: 10%;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+     position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+} 
+ input[type="radio"]{
+    display: none;
+}
+ .allfaq .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px; 
+    max-height: 0;
+
+    color: #fff;
+     overflow: hidden;  
+    transition: max-height 0.5s, padding 0.5s;
+} 
+.allfaq input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 35px 20px;
+}
+.allfaq input[type="radio"]:checked + label::after{
+    transform: rotate(167deg);
+}
+.faq p{
+    line-height: 10px;
+    font-weight: 400;
+    font-size: 23px;
+    color: #fff;
+    position: relative;
+    left: 0%;
+    bottom: 5%;
+}
+.faq form{
+    margin-left: 31%;
+    position: relative;
+    bottom: 5%;
+    
+}
+.faq input{
+     margin-left: 80px;
+    padding-left:10px;
+    border: 1px solid #9d9494;
+    background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.5,0.4));
+    width: 35%;
+    height: 7vh;
+    border-radius: 5px;
+    font-size: large;
+    color: #fff;
+}
+.faq form button{
+    width: 18%;
+    height: 7.5vh;
+    margin: 10px;
+    background-color: red;
+    border-radius: 5px;
+    border: 1px solid black ;
+    font-size: x-large;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about
+{
+    width: 80%;
+    height: 90%;
+}
+.about .question{
+    color: #ebd4d4;
+    position: relative;
+    left: 13%;
+    top: 10%;
+}
+
+.about .row{
+     display: flex;
+    width: 100%;
+    height: 9vh;
+    margin-left: 8%;
+}
+.about .row .col{
+    margin: 5%;
+    display: grid;
+    line-height: 30px;
+}
+.about .row .col a{
+    color: #c8b4b4;
+}
+.about .lan{
+    position: relative;
+    left: 13%;
+    top: 40%;
+}
+ 
+.about select{
+    width: 10%;
+    height: 5vh;
+  color: #fff;
+    background: transparent;
+    border: 1px solid rgb(159, 147, 147);
+  border-radius: 5px;
+}
+.about .lan p{
+    color: rgb(167, 172, 177);
+}
+
+
